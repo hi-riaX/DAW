@@ -39,7 +39,16 @@ header h1 {
     color: white;
     text-align: center;
     border: 5px solid red;
-
+    display: flex;
+    /*opcion2*/
+    flex-direction: column;
+    justify-content: center;
+    /* opcion1
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    */
  
 }
 header nav {
@@ -71,8 +80,22 @@ header nav a:hover {
 main {
     height: 78vh;
     background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
 }
+main nav {
+    border: 2px solid black;
+    flex-basis: 20%;
 
+}
+main section {
+    border: 2px solid black;
+    flex-basis: 60%;;
+}
+main aside {
+    border: 2px solid black;
+    flex-basis: 20%;
+}
 footer {
     height: 10vh;
     background-color: gray;
